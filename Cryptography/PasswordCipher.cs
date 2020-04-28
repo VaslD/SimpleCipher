@@ -85,7 +85,7 @@ namespace VaslD.Utility.Cryptography
                 var bytesWritten = Decryptor.TransformBlock(inBuffer, 0, bytesRead, outBuffer, 0);
                 output.Write(outBuffer, 0, bytesWritten);
             }
-            return Encoding.UTF8.GetString(output.ToArray()).Trim((char)0);
+            return Encoding.UTF8.GetString(output.ToArray()).TrimEnd((char) 0);
         }
 
         public string EncryptTextOnce(string plainText)
@@ -120,5 +120,4 @@ namespace VaslD.Utility.Cryptography
             Decryptor.Dispose();
         }
     }
-
 }
