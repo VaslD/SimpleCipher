@@ -6,4 +6,8 @@
     <RootNamespace>VaslD.Utility.Cryptography</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Pastel" Version="1.3.1" />
+  </ItemGroup>
+
 </Project>
